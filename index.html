@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Order-Summery</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+
+<style>
+            
+    .specimen {font-family:'specimen', sans-serif;}
+
+    @media screen and (max-width: 445px) { 
+
+    .primer {
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: gray;
+                    }
+    }
+
+
+
+
+    @media screen and (min-width: 445px) { 
+
+.primer2 {
+    padding-left: 96px;
+    padding-right: 96px;
+                }
+}
+
+
+
+@media screen and (min-width: 445px) { 
+
+.oculto {
+    display: none;
+
+   
+                }
+}
+
+
+
+@media screen and (max-width: 444px) { 
+
+.oculto2 {
+    display: none;
+    }
+
+ 
+}
+@keyframes spinOnce {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        .hover-animate-spin-stop:hover {
+            animation: spinOnce 1s forwards;
+        }
+</style>
+
+
+
+<body class="bg-[#e0e8ff] bg-cover bg-center specimen " style="background-image: url(./images/pattern-background-desktop.svg);">
+
+    <div class="flex flex-col items-center justify-center h-screen">
+       
+                                    <!-- IMAGEN-HEADER -->
+       <div> 
+        <img class=" rounded-t-2xl" src="./images/illustration-hero.svg" alt="">
+       </div>
+    
+                                    <!--BODY-HEADER -->
+        <div class="bg-white max-w-[450px] w-full rounded-b-lg">
+        
+            <h1 class="pt-8 pb-3 text-3xl font-bold text-center">Order Summary</h1> 
+         
+            <p class="pb-3 text-sm font-medium text-center text-gray-400"> You can now listen to millions of songs,<br>
+            audiobooks, and podcasts on any device <br>
+            anywhere you like!
+            </p> 
+
+        <!-- #aduio-plan -->
+        <div class="bg-[#e0e8ff42] flex justify-between items-center mb-6 py-4 px-3 rounded-xl mx-auto max-w-[330px]">
+
+            <div class="flex flex-row">
+                
+                <img class="pr-4 h-[35px]" src="./images/icon-music.svg" alt="">
+
+                <p class="text-sm"> 
+                    <span 
+                    class="text-sm font-bold">Annual Plan</span>  <br>
+                   <span class="text-gray-400">$59.99/year</span> </p>
+             </div>
+            
+             <div>
+            <a href="#" class="relative text-xs font-bold text-blue-700 underline right-4">Change</a>
+            </div>
+
+        </div>
+
+        <!-- #Buton -->
+        <button class=" primer primer2 flex mx-auto hover:transition-all  hover-animate-spin-stop bg-[#3829e0] py-3 text-white text-[13px] sm:px-24 rounded-xl font-bold mb-4 shadow-blue-800 shadow-2xl">
+            <div class="">  
+            <div class="oculto">Proceed </div>
+            <div class="oculto">to </div>
+            <div class="oculto">Payment</div> 
+            </div>
+            <div class="oculto2">Proceed to Payment</div>
+            
+          
+        </button>
+
+        <!-- #Cancel-order -->
+            <p class="text-center text-[14px]
+             text-gray-400/100
+             font-bold pb-10">Cancel Order</p>
+    </div>
+    
+    </div>
+
+    
+</body>
+</html>
+
+
+
+   
